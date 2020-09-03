@@ -1,3 +1,5 @@
+// Author: James Overmoyer jpo5322@psu.edu
+
 #include <stdio.h>
 #include <readline/readline.h>
 
