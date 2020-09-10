@@ -1,5 +1,9 @@
 // Author: James Overmoyer jpo5322@psu.edu
-// Collaborator:
+// Collaborator: geng niu gjn5124@psu.edu
+// Collaborator: Kenleigh leonard kml6565@psu.edu
+// Collaborator: Junyang guan jmg7510@psu.edu
+// Section: 4
+// Breakout: 12
 
 #include <stdio.h>
 #include <stdlib.h>
