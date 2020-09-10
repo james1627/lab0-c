@@ -3,7 +3,7 @@
 // Collaborator: Kenleigh leonard kml6565@psu.edu
 // Collaborator: Junyang guan jmg7510@psu.edu
 // Section: 4
-// Breakout: 12
+// Breakout: 4
 
 #include <stdio.h>
 #include <stdlib.h>
