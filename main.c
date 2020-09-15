@@ -1,7 +1,7 @@
 // Author: James Overmoyer jpo5322@psu.edu
-// Collaborator: geng niu gjn5124@psu.edu
-// Collaborator: Kenleigh leonard kml6565@psu.edu
-// Collaborator: Junyang guan jmg7510@psu.edu
+// Collaborator: @psu.edu
+// Collaborator: @psu.edu
+// Collaborator: @psu.edu
 // Section: 4
 // Breakout: 4
 
@@ -9,20 +9,25 @@
 #include <stdlib.h>
 #include <readline/readline.h>
 
-int main(void) {
-  double gradePercentage[8] = {93, 90, 87, 83, 80, 77, 70, 60};
-  char *gradeLetters[8] = {"A", "A-", "B+","B","B-","C+","C","D"};
-  char *grade = "F";
-
-  double number = atof(readline("Enter your CMPSC 131 grade: "));
-  
-  for(int c = 0; c<=7;c++){
-    if(number >= gradePercentage[c]){
-      grade = gradeLetters[c];
-      break;
-    }
+int sum_n(int n) {
+  if (n-1 == 0){
+    return n;
   }
-  
-  printf("Your letter grade for CMPSC 131 is %s.\n", grade);
+  return n + sum_n(n-1);
+}
+void print_n(const char *s, int n){
+  printf("%s\n", s);
+  if (n-1 == 0){
+    return;
+  }
+  print_n(s, n-1);
+}
+
+int main(void) {
+  int number = atoi(readline("Enter an int: "));
+  printf("sum is %d.\n", sum_n(number));
+  char *word = readline("Enter a string: ");
+  print_n(word, number);
   return 0;
 }
+
