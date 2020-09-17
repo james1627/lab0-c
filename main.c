@@ -10,16 +10,16 @@
 #include <readline/readline.h>
 
 int sum_n(int n) {
-  if (n-1 <= 0){
-    return 1;
+  if (n == 0){
+    return 0;
   }
   return n + sum_n(n-1);
 }
 void print_n(const char *s, int n){
-  printf("%s\n", s);
-  if (n-1 < 0){
+  if (n == 0){
     return;
   }
+  printf("%s\n", s);
   print_n(s, n-1);
 }
 
