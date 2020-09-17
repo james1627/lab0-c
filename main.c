@@ -1,7 +1,7 @@
 // Author: James Overmoyer jpo5322@psu.edu
-// Collaborator: @psu.edu
-// Collaborator: @psu.edu
-// Collaborator: @psu.edu
+// Collaborator: Alexander Leggiero arl5733@psu.edu
+// Collaborator: Yu-Hsiang Huang ykh5222@psu.edu
+// Collaborator: Lynn Francis jtf5383@psu.edu
 // Section: 4
 // Breakout: 4
 
@@ -10,14 +10,14 @@
 #include <readline/readline.h>
 
 int sum_n(int n) {
-  if (n-1 == 0){
-    return n;
+  if (n-1 <= 0){
+    return 1;
   }
   return n + sum_n(n-1);
 }
 void print_n(const char *s, int n){
   printf("%s\n", s);
-  if (n-1 == 0){
+  if (n-1 < 0){
     return;
   }
   print_n(s, n-1);
