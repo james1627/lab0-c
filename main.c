@@ -3,7 +3,7 @@
 // Collaborator: Yu-Hsiang Huang ykh5222@psu.edu
 // Collaborator: Lynn Francis jtf5383@psu.edu
 // Section: 4
-// Breakout: 4
+// Breakout: 10
 
 #include <stdio.h>
 #include <stdlib.h>
